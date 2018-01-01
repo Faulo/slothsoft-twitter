@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module>
+	<fragment name="index">
+		<data name="index" />
+		<template name="_index" />
+		<style name="default" />
+	</fragment>
+
+	<fragment name="tweets">
+		<data name="display" />
+		<template name="_tweets" />
+		<style name="default" />
+	</fragment>
+
+	<fragment name="media">
+		<data name="display" />
+		<param name="pics" value="1" />
+		<param name="limit" value="-1" />
+		<template name="_media" />
+		<style name="default" />
+	</fragment>
+
+	<fragment name="stats">
+		<data name="stats" />
+		<template name="_stats" />
+		<style name="default" />
+		<param scope="global" name="standalone" />
+	</fragment>
+
+	<fragment name="frequency">
+		<data name="frequency" />
+		<template name="_frequency" />
+		<style name="default" />
+		<struc name="/core/HTML5" />
+	</fragment>
+
+	<resourceDir name="pics" path="pics" type="image/*" />
+	<resourceDir name="html" path="html" type="text/html" />
+
+	<resourceDir name="stats" path="stats" type="application/xhtml+xml" />
+
+	<resource name="faulolio" path="faulolio.csv" type="text/csv"
+		output="thead" esc="" />
+
+	<resource name="sites" path="sites.xml" type="application/xml" />
+</module>

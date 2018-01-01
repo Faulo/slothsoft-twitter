@@ -1,0 +1,26 @@
+{
+    "name": "slothsoft/empty",
+    "description": "",
+    "keywords": [],
+    "license": "WTFPL",
+    "authors": [
+        {
+            "name": "Daniel Schulz",
+            "email": "info.slothsoft@gmail.com"
+        }
+    ],
+    "type": "library",
+    "require": {
+		"slothsoft/core" : "*",
+		
+		"php": ">=7.0"
+    },
+	"require-dev": {
+		"phpunit/phpunit": ">=6.0"
+    },
+	"autoload": {
+        "psr-4": {
+            "Slothsoft\\EMPTY\\": "php/"
+        }
+    }
+}
