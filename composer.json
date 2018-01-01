@@ -1,6 +1,6 @@
 {
-    "name": "slothsoft/empty",
-    "description": "",
+    "name": "slothsoft/twitter",
+    "description": "A Farah module that downloads twitter feeds of individual users.",
     "keywords": [],
     "license": "WTFPL",
     "authors": [
@@ -20,7 +20,7 @@
     },
 	"autoload": {
         "psr-4": {
-            "Slothsoft\\EMPTY\\": "php/"
+            "Slothsoft\\Twitter\\": "php/"
         }
     }
 }

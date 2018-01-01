@@ -1,4 +1,4 @@
-Files and Resources and Hypertext
-=================================
+Twitter Module
+==============
 
-A Farah module.
+A Farah module that downloads twitter feeds of individual users.
