@@ -1,7 +1,7 @@
 <?php
 namespace Slothsoft\Twitter;
 
-use Slothsoft\CMS\HTTPFile;
+use Slothsoft\Farah\HTTPFile;
 use Slothsoft\Core\DOMHelper;
 use Slothsoft\Core\Storage;
 use Slothsoft\DBMS\Manager as DBMS;

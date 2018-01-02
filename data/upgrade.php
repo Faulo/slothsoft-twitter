@@ -1,5 +1,5 @@
 <?php
-namespace Slothsoft\CMS;
+namespace Slothsoft\Farah;
 
 use Slothsoft\Core\Lambda\Manager;
 use Slothsoft\Twitter\Archive;

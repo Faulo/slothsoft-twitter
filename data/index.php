@@ -1,5 +1,5 @@
 <?php
-namespace Slothsoft\CMS;
+namespace Slothsoft\Farah;
 
 use Slothsoft\Twitter\Archive;
 $retFragment = $dataDoc->createDocumentFragment();

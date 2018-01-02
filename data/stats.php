@@ -1,5 +1,5 @@
 <?php
-namespace Slothsoft\CMS;
+namespace Slothsoft\Farah;
 
 // my_dump(309369146636898304 < 309371004566786048);
 // my_dump(strcmp('309369146636898304', '309371004566786048'));die();
