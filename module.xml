@@ -1,46 +1,64 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<module>
-	<fragment name="index">
-		<data name="index" />
-		<template name="_index" />
-		<style name="default" />
-	</fragment>
+<?xml version="1.0"?>
+<module xmlns="http://schema.slothsoft.net/farah/module" xmlns:sfm="http://schema.slothsoft.net/farah/module">
+  <!--
+Farah Module Manifest
 
-	<fragment name="tweets">
-		<data name="display" />
-		<template name="_tweets" />
-		<style name="default" />
-	</fragment>
+Module: twitter
+Vendor: slothsoft
+Farah ID: farah://slothsoft@twitter
+Composer ID: slothsoft/twitter
 
-	<fragment name="media">
-		<data name="display" />
-		<param name="pics" value="1" />
-		<param name="limit" value="-1" />
-		<template name="_media" />
-		<style name="default" />
-	</fragment>
+Homepage: http://farah.slothsoft.net/modules/twitter
+Packagist: https://packagist.org/packages/slothsoft/twitter
+GitHub: https://github.com/Faulo/slothsoft-twitter
 
-	<fragment name="stats">
-		<data name="stats" />
-		<template name="_stats" />
-		<style name="default" />
-		<param scope="global" name="standalone" />
-	</fragment>
-
-	<fragment name="frequency">
-		<data name="frequency" />
-		<template name="_frequency" />
-		<style name="default" />
-		<struc name="/core/HTML5" />
-	</fragment>
-
-	<resourceDir name="pics" path="pics" type="image/*" />
-	<resourceDir name="html" path="html" type="text/html" />
-
-	<resourceDir name="stats" path="stats" type="application/xhtml+xml" />
-
-	<resource name="faulolio" path="faulolio.csv" type="text/csv"
-		output="thead" esc="" />
-
-	<resource name="sites" path="sites.xml" type="application/xml" />
+Llo
+-->
+  <default-configuration/>
+  <assets>
+    <resource-directory name="data" path="data" type="application/x-php"/>
+    <resource-directory name="css" path="stylesheet" type="text/css"/>
+    <resource-directory name="js" path="script" type="application/javascript"/>
+    <resource-directory name="xsl" path="template" type="application/xslt+xml"/>
+    <resource-directory name="dictionary" path="dictionary" type="application/xml"/>
+    <resource-directory name="pages" path="pages" type="application/xml"/>
+    <fragment name="index">
+      <use-document ref="data/index"/>
+      <use-template ref="xsl/_index"/>
+      <use-stylesheet ref="css/default"/>
+    </fragment>
+    <fragment name="tweets">
+      <use-document ref="data/display"/>
+      <use-template ref="xsl/_tweets"/>
+      <use-stylesheet ref="css/default"/>
+    </fragment>
+    <fragment name="media">
+      <use-document ref="data/display"/>
+      <param name="pics" value="1"/>
+      <param name="limit" value="-1"/>
+      <use-template ref="xsl/_media"/>
+      <use-stylesheet ref="css/default"/>
+    </fragment>
+    <fragment name="stats">
+      <use-document ref="data/stats"/>
+      <use-template ref="xsl/_stats"/>
+      <use-stylesheet ref="css/default"/>
+      <param name="standalone" scope="global"/>
+    </fragment>
+    <fragment name="frequency">
+      <use-document ref="data/frequency"/>
+      <use-template ref="xsl/_frequency"/>
+      <use-stylesheet ref="css/default"/>
+      <include-fragment ref="//slothsoft@core/HTML5"/>
+    </fragment>
+    <directory name="static">
+      <resource-directory name="pics" path="pics" type="image/*"/>
+      <resource-directory name="html" path="html" type="text/html"/>
+      <resource-directory name="stats" path="stats" type="application/xhtml+xml"/>
+      <resource name="faulolio" path="faulolio.csv" type="text/csv">
+        <options output="thead" esc=""/>
+      </resource>
+      <resource name="sites" path="sites.xml" type="application/xml"/>
+    </directory>
+  </assets>
 </module>
