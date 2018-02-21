@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pages xmlns="http://schema.slothsoft.net/farah/sites"
+xmlns:sfm="http://schema.slothsoft.net/farah/module">
+	<page name="Archive" ref="index">
+		<sfm:param name="limit" value="100"/>
+		<include-pages ref="pages/sites"/>
+	</page>
+</pages>

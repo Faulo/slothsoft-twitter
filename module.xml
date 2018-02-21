@@ -22,6 +22,14 @@ Llo
     <resource-directory name="xsl" path="template" type="application/xslt+xml"/>
     <resource-directory name="dictionary" path="dictionary" type="application/xml"/>
     <resource-directory name="pages" path="pages" type="application/xml"/>
+    <directory name="static">
+      <resource-directory name="pics" path="pics" type="image/*"/>
+      <resource-directory name="html" path="html" type="text/html"/>
+      <resource-directory name="stats" path="stats" type="application/xhtml+xml"/>
+      <resource name="faulolio" path="faulolio.csv" type="text/csv">
+        <options output="thead" esc=""/>
+      </resource>
+    </directory>
     <fragment name="index">
       <use-document ref="data/index"/>
       <use-template ref="xsl/_index"/>
@@ -51,14 +59,5 @@ Llo
       <use-stylesheet ref="css/default"/>
       <include-fragment ref="//slothsoft@core/HTML5"/>
     </fragment>
-    <directory name="static">
-      <resource-directory name="pics" path="pics" type="image/*"/>
-      <resource-directory name="html" path="html" type="text/html"/>
-      <resource-directory name="stats" path="stats" type="application/xhtml+xml"/>
-      <resource name="faulolio" path="faulolio.csv" type="text/csv">
-        <options output="thead" esc=""/>
-      </resource>
-      <resource name="sites" path="sites.xml" type="application/xml"/>
-    </directory>
   </assets>
 </module>
