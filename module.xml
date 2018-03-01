@@ -57,7 +57,7 @@ Llo
       <use-document ref="data/frequency"/>
       <use-template ref="xsl/_frequency"/>
       <use-stylesheet ref="css/default"/>
-      <include-fragment ref="//slothsoft@core/HTML5"/>
+      <import ref="//slothsoft@core/HTML5"/>
     </fragment>
   </assets>
 </module>

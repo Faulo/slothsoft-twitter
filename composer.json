@@ -1,26 +1,23 @@
 {
-    "name": "slothsoft/twitter",
-    "description": "A Farah module that downloads twitter feeds of individual users.",
-    "keywords": [],
-    "license": "WTFPL",
-    "authors": [
-        {
-            "name": "Daniel Schulz",
-            "email": "info.slothsoft@gmail.com"
-        }
-    ],
-    "type": "library",
-    "require": {
+	"name" : "slothsoft/twitter",
+	"description" : "A Farah module that downloads twitter feeds of individual users.",
+	"license" : "WTFPL",
+	"authors" : [{
+			"name" : "Daniel Schulz",
+			"email" : "info.slothsoft@gmail.com"
+		}
+	],
+	"type" : "library",
+	"require" : {
 		"slothsoft/core" : "*",
-		
-		"php": ">=7.0"
-    },
-	"require-dev": {
-		"phpunit/phpunit": ">=6.0"
-    },
-	"autoload": {
-        "psr-4": {
-            "Slothsoft\\Twitter\\": "php/"
-        }
-    }
+		"php" : ">=7.0"
+	},
+	"require-dev" : {
+		"phpunit/phpunit" : ">=6.0"
+	},
+	"autoload" : {
+		"psr-4" : {
+			"Slothsoft\\Twitter\\" : "src/Slothsoft/Twitter/"
+		}
+	}
 }
