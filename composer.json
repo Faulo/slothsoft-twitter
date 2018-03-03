@@ -19,7 +19,7 @@
     },
     "autoload": {
         "psr-4": {
-            "Slothsoft\\Twitter\\": "src\/Slothsoft\/Twitter\/"
+            "Slothsoft\\Twitter\\": "src\/"
         }
     }
 }
