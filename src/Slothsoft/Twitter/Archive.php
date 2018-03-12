@@ -1,9 +1,9 @@
 <?php
 namespace Slothsoft\Twitter;
 
-use Slothsoft\Farah\HTTPFile;
 use Slothsoft\Core\DOMHelper;
 use Slothsoft\Core\Storage;
+use Slothsoft\Core\IO\HTTPFile;
 use Slothsoft\DBMS\Manager as DBMS;
 use DOMDocument;
 use DOMNode;
@@ -133,7 +133,7 @@ class Archive
             $node->setAttribute('id', $data['tweet_id']);
             $node->setAttribute('text', $data['tweet_text']);
             $node->setAttribute('time', $data['tweet_time']);
-            $node->setAttribute('date', date(DATE_DATETIME, $data['tweet_time']));
+            $node->setAttribute('date', date(DateTimeFormatter::FORMAT_DATETIME, $data['tweet_time']));
             $node->setAttribute('href', sprintf(self::TWITTER_URL_TWEET, $this->userName, $data['tweet_id']));
             if ($data['tweet_media']) {
                 $media = json_decode($data['tweet_media'], true);
@@ -433,13 +433,13 @@ class Archive
 
     protected function downloadXPath($href, $useCache = false)
     {
-        $cacheTime = $useCache ? TIME_DECADE : TIME_MINUTE;
+        $cacheTime = $useCache ? Seconds::DECADE : Seconds::MINUTE;
         return Storage::loadExternalXPath($href, $cacheTime);
     }
 
     protected function downloadJSON($href, $useCache = false)
     {
-        $cacheTime = $useCache ? TIME_DECADE : TIME_MINUTE;
+        $cacheTime = $useCache ? Seconds::DECADE : Seconds::MINUTE;
         return Storage::loadExternalJSON($href, $cacheTime);
     }
 
