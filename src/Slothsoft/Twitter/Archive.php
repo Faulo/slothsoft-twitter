@@ -3,6 +3,8 @@ namespace Slothsoft\Twitter;
 
 use Slothsoft\Core\DOMHelper;
 use Slothsoft\Core\Storage;
+use Slothsoft\Core\Calendar\DateTimeFormatter;
+use Slothsoft\Core\Calendar\Seconds;
 use Slothsoft\Core\IO\HTTPFile;
 use Slothsoft\DBMS\Manager as DBMS;
 use DOMDocument;
