@@ -33,30 +33,30 @@ Llo
     <fragment name="index">
       <use-document ref="data/index"/>
       <use-template ref="xsl/_index"/>
-      <use-stylesheet ref="css/default"/>
+      <link-stylesheet ref="css/default"/>
     </fragment>
     <fragment name="tweets">
       <use-document ref="data/display"/>
       <use-template ref="xsl/_tweets"/>
-      <use-stylesheet ref="css/default"/>
+      <link-stylesheet ref="css/default"/>
     </fragment>
     <fragment name="media">
       <use-document ref="data/display"/>
       <param name="pics" value="1"/>
       <param name="limit" value="-1"/>
       <use-template ref="xsl/_media"/>
-      <use-stylesheet ref="css/default"/>
+      <link-stylesheet ref="css/default"/>
     </fragment>
     <fragment name="stats">
       <use-document ref="data/stats"/>
       <use-template ref="xsl/_stats"/>
-      <use-stylesheet ref="css/default"/>
+      <link-stylesheet ref="css/default"/>
       <param name="standalone" scope="global"/>
     </fragment>
     <fragment name="frequency">
       <use-document ref="data/frequency"/>
       <use-template ref="xsl/_frequency"/>
-      <use-stylesheet ref="css/default"/>
+      <link-stylesheet ref="css/default"/>
       <import ref="//slothsoft@core/HTML5"/>
     </fragment>
   </assets>
