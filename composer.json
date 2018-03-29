@@ -1,32 +1,34 @@
 {
-    "name": "slothsoft\/twitter",
-    "description": "A Farah module that downloads twitter feeds of individual users.",
-    "license": "WTFPL",
-    "authors": [
-        {
-            "name": "Daniel Schulz",
-            "email": "info.slothsoft@gmail.com"
-        }
-    ],
-    "type": "library",
-    "require": {
-        "php": ">=7.0",
-        "slothsoft\/core": "*",
-        "slothsoft\/farah": "*"
-    },
-    "require-dev": {
-        "phpunit\/phpunit": ">=6.0",
-        "slothsoft\/core": "dev-master",
-        "slothsoft\/farah": "dev-master",
-        "slothsoft\/lang": "dev-master",
-        "slothsoft\/w3c": "dev-master"
-    },
-    "autoload": {
-        "files": [
-            "C:\\Webserver\\workspace\\slothsoft-twitter\\src\\registerModule.php"
-        ],
-        "psr-0": {
-            "Slothsoft\\Twitter\\": "src\/"
-        }
-    }
+	"name" : "slothsoft/twitter",
+	"description" : "A Farah module that downloads twitter feeds of individual users.",
+	"license" : "WTFPL",
+	"authors" : [{
+			"name" : "Daniel Schulz",
+			"email" : "info.slothsoft@gmail.com"
+		}
+	],
+	"type" : "library",
+	"require" : {
+		"php" : ">=7.0",
+		"slothsoft/core" : "*",
+		"slothsoft/farah" : "*"
+	},
+	"require-dev" : {
+		"phpunit/phpunit" : ">=6.0",
+		"slothsoft/core" : "dev-master",
+		"slothsoft/farah" : "dev-master",
+		"slothsoft/lang" : "dev-master",
+		"slothsoft/w3c" : "dev-master"
+	},
+	"autoload" : {
+		"files" : [
+			"src/registerModule.php"
+		],
+		"psr-0" : {
+			"Slothsoft\\Twitter\\" : "src/"
+		}
+	},
+	"keywords" : [
+		"farah-domain"
+	]
 }
