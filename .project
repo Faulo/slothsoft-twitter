@@ -2,7 +2,7 @@
 <projectDescription>
 	<name>slothsoft-twitter</name>
 	<comment/>
-	<projects><project>slothsoft-core</project><project>slothsoft-dbms</project><project>slothsoft-farah</project><project>slothsoft-lang</project><project>slothsoft-pt</project><project>slothsoft-w3c</project></projects>
+	<projects/>
 	<buildSpec>
 		<buildCommand>
 			<name>org.eclipse.php.composer.core.builder.buildPathManagementBuilder</name>
