@@ -1,46 +1,58 @@
 <?xml version="1.0"?>
 <assets xmlns="http://schema.slothsoft.net/farah/module">
-    <resource-directory name="data" path="data" type="application/x-php"/>
-    <resource-directory name="css" path="stylesheet" type="text/css"/>
-    <resource-directory name="js" path="script" type="application/javascript"/>
-    <resource-directory name="xsl" path="template" type="application/xslt+xml"/>
-    <resource-directory name="dictionary" path="dictionary" type="application/xml"/>
-    <resource-directory name="pages" path="pages" type="application/xml"/>
+    <resource-directory name="css"  type="text/css"/>
+    <resource-directory name="xsl"  type="application/xslt+xml"/>
+    
+    <resource-directory name="sites"  type="application/xml"/>
+    
+    
+    
+    
+    <!-- 
     <directory name="static">
-      <resource-directory name="pics" path="pics" type="image/*"/>
-      <resource-directory name="html" path="html" type="text/html"/>
-      <resource-directory name="stats" path="stats" type="application/xhtml+xml"/>
+      <resource-directory name="pics"  type="image/*"/>
+      <resource-directory name="html"  type="text/html"/>
+      <resource-directory name="stats"  type="application/xhtml+xml"/>
       <resource name="faulolio" path="faulolio.csv" type="text/csv">
         <options output="thead" esc=""/>
       </resource>
     </directory>
+    -->
+    
     <fragment name="index">
-      <use-document ref="data/index"/>
+      <use-document ref="api/index"/>
       <use-template ref="xsl/_index"/>
       <link-stylesheet ref="css/default"/>
     </fragment>
     <fragment name="tweets">
-      <use-document ref="data/display"/>
+      <use-document ref="api/display"/>
       <use-template ref="xsl/_tweets"/>
       <link-stylesheet ref="css/default"/>
     </fragment>
     <fragment name="media">
-      <use-document ref="data/display"/>
+      <use-document ref="api/display"/>
       <param name="pics" value="1"/>
       <param name="limit" value="-1"/>
       <use-template ref="xsl/_media"/>
       <link-stylesheet ref="css/default"/>
     </fragment>
     <fragment name="stats">
-      <use-document ref="data/stats"/>
+      <use-document ref="api/stats"/>
       <use-template ref="xsl/_stats"/>
       <link-stylesheet ref="css/default"/>
       <param name="standalone" scope="global"/>
     </fragment>
     <fragment name="frequency">
-      <use-document ref="data/frequency"/>
+      <use-document ref="api/frequency"/>
       <use-template ref="xsl/_frequency"/>
       <link-stylesheet ref="css/default"/>
-      <import ref="//slothsoft@core/HTML5"/>
+      <import ref="//slothsoft@core/api/HTML5"/>
+    </fragment>
+    
+    <fragment name="api">
+    	<fragment name="index"/>
+    	<fragment name="display"/>
+    	<fragment name="stats"/>
+    	<fragment name="frequency"/>
     </fragment>
   </assets>
