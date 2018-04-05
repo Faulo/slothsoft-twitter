@@ -1,5 +1,5 @@
 <?php
-namespace tests;
+declare(strict_types = 1);
 
 use Slothsoft\Farah\ModuleTests\AbstractXmlManifestTest;
 use Slothsoft\Farah\Module\Manifest\ManifestInterface;

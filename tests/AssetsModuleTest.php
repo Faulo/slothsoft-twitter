@@ -1,10 +1,9 @@
 <?php
-namespace tests;
+declare(strict_types = 1);
 
 use Slothsoft\Farah\Module\Module;
 use Slothsoft\Farah\ModuleTests\AbstractModuleTest;
 use Slothsoft\Farah\Module\FarahUrl\FarahUrlAuthority;
-use Slothsoft\Farah\Module\Manifest\XmlManifest;
 
 class AssetsModuleTest extends AbstractModuleTest
 {
