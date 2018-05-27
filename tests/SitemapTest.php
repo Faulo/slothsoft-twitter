@@ -3,7 +3,7 @@ declare(strict_types = 1);
 
 use Slothsoft\Farah\Configuration\AssetConfigurationField;
 use Slothsoft\Farah\ModuleTests\AbstractSitemapTest;
-use Slothsoft\Farah\Module\Node\Asset\AssetInterface;
+use Slothsoft\Farah\Module\Asset\AssetInterface;
 
 class SitemapTest extends AbstractSitemapTest
 {

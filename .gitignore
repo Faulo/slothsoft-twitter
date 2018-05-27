@@ -10,3 +10,5 @@ Thumbs.db
 /data/
 /cache/
 /log/
+.tmp
+*.tmp
