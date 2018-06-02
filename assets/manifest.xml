@@ -20,33 +20,33 @@
     -->
     
     <fragment name="index">
-      <use-document ref="/api/index"/>
-      <use-template ref="/xsl/_index"/>
-      <link-stylesheet ref="/css/default"/>
+      <use-document ref="/api/index" name="index"/>
+      <use-template ref="/xsl/_index" name="_index"/>
+      <link-stylesheet ref="/css/default" name="default"/>
     </fragment>
     <fragment name="tweets">
-      <use-document ref="/api/display"/>
-      <use-template ref="/xsl/_tweets"/>
-      <link-stylesheet ref="/css/default"/>
+      <use-document ref="/api/display" name="display"/>
+      <use-template ref="/xsl/_tweets" name="_tweets"/>
+      <link-stylesheet ref="/css/default" name="default"/>
     </fragment>
     <fragment name="media">
-      <use-document ref="/api/display"/>
+      <use-document ref="/api/display" name="display"/>
       <param name="pics" value="1"/>
       <param name="limit" value="-1"/>
-      <use-template ref="/xsl/_media"/>
-      <link-stylesheet ref="/css/default"/>
+      <use-template ref="/xsl/_media" name="_media"/>
+      <link-stylesheet ref="/css/default" name="default"/>
     </fragment>
     <fragment name="stats">
-      <use-document ref="/api/stats"/>
-      <use-template ref="/xsl/_stats"/>
-      <link-stylesheet ref="/css/default"/>
+      <use-document ref="/api/stats" name="stats"/>
+      <use-template ref="/xsl/_stats" name="_stats"/>
+      <link-stylesheet ref="/css/default" name="default"/>
       <param name="standalone" scope="global"/>
     </fragment>
     <fragment name="frequency">
-      <use-document ref="/api/frequency"/>
-      <use-template ref="/xsl/_frequency"/>
-      <link-stylesheet ref="/css/default"/>
-      <import ref="//slothsoft@core/api/HTML5"/>
+      <use-document ref="/api/frequency" name="frequency"/>
+      <use-template ref="/xsl/_frequency" name="_frequency"/>
+      <link-stylesheet ref="/css/default" name="default"/>
+      <import ref="//slothsoft@core/api/HTML5" name="HTML5"/>
     </fragment>
     
     <fragment name="api">
