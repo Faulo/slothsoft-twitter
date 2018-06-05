@@ -1,9 +1,9 @@
 <?php
 declare(strict_types = 1);
 
-use Slothsoft\Farah\ModuleTests\AbstractXmlTreeLoaderTest;
+use Slothsoft\Farah\ModuleTests\AbstractXmlManifestTest;
 
-class AssetsManifestTest extends AbstractXmlTreeLoaderTest
+class AssetsManifestTest extends AbstractXmlManifestTest
 {
     protected static function getManifestDirectory(): string
     {
