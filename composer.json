@@ -27,7 +27,8 @@
     },
     "keywords": [
         "slothsoft",
-        "farah-module"
+        "farah-module",
+        "docs"
     ],
     "autoload-dev": {
         "classmap": [
