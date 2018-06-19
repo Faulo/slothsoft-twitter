@@ -1,14 +1,12 @@
 /composer.phar
-/composer.lock
 /vendor/
+/data/
+/cache/
+/log/
 tmp/
 temp/
 unused/
 *Kopie*
 Thumbs.db
 .DS_Store
-/data/
-/cache/
-/log/
-.tmp
 *.tmp
