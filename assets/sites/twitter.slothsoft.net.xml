@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <sitemap version="1.0" xmlns="http://schema.slothsoft.net/farah/sitemap"
-xmlns:sfm="http://schema.slothsoft.net/farah/module">
+	xmlns:sfm="http://schema.slothsoft.net/farah/module">
 	<page name="Archive" ref="index">
-		<sfm:param name="limit" value="100"/>
-		<include-pages ref="pages/sites"/>
+		<sfm:param name="limit" value="100" />
+		<include-pages ref="pages/sites" />
 	</page>
 </sitemap>

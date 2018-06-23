@@ -5,32 +5,41 @@ table p {
 	font-family: "Helvetica Neue", "Arial", sans-serif;
 	font-size: 14px;
 }
+
 .time, .number {
 	font-family: monospace;
 }
+
 .number {
 	text-align: right;
 }
+
 td {
 	padding: 0;
 	vertical-align: top;
 }
+
 .time, .text {
 	padding: 4px 4px 0 4px;
 }
+
 table a, img, video, iframe {
 	display: block;
 }
+
 img, video, iframe {
 	width: 256px;
 	border: none;
 }
+
 iframe {
 	height: 192px;
 }
+
 tr:nth-child(even) {
 	background-color: #e0e0e0;
 }
+
 tr:nth-child(odd) {
 	background-color: #e8e8e8;
 }
@@ -39,22 +48,27 @@ tr:nth-child(odd) {
 	text-align: center;
 	background: gray;
 }
+
 .media a {
 	display: inline-block;
 	vertical-align: top;
 	border: 1px solid transparent;
 }
+
 .media a:hover {
 	border-color: white;
 }
+
 .media img, video {
 	height: 136px;
 	width: auto;
 }
+
 .stats {
 	position: relative;
 	background: black;
 }
+
 .diagram {
 	border: 1px groove silver;
 	border-radius: 1em;
@@ -62,25 +76,30 @@ tr:nth-child(odd) {
 	padding: 1em;
 	display: table;
 }
+
 .legend {
 	position: absolute;
 	top: 1em;
 	left: 6em;
 	width: 15em;
 }
+
 .legend h2 {
 	margin: 0.5em 0;
 	width: 30em;
 }
+
 .legend ul {
 	list-style-type: none;
 	margin: 0;
 	padding: 0;
 }
+
 .legend li {
 	padding: 0.25em 0;
 	margin: 0;
 }
+
 .legend .square {
 	display: inline-block;
 	width: 1em;
@@ -89,45 +108,54 @@ tr:nth-child(odd) {
 	vertical-align: bottom;
 	margin-right: 0.5em;
 }
+
 table.inline {
 	display: inline-table;
 	margin: 0 1em;
 }
 
-
 svg.log-short {
 	background-color: #eee;
 	display: block;
 }
+
 svg.log-short .axes path {
 	stroke: #196F69;
 	stroke-width: 4px;
 }
+
 svg.log-short .online path {
 	fill: #629923;
 	stroke: #A69F25;
-	stroke-width:1px;
+	stroke-width: 1px;
 }
+
 svg.log-short .online text {
 	text-anchor: start;
 	font-size: 1.3em;
 }
+
 svg.log-short .clock rect {
 	fill: #4B807C;
 }
+
 svg.log-short rect[data-correct="0"] {
 	fill: #FFB073;
 }
+
 svg.log-short rect[data-correct="1"] {
 	fill: #629923;
 }
-svg.log-short .labels > text {
+
+svg.log-short .labels>text {
 	text-anchor: end;
 	fill: navy;
 }
-svg.log-short .labels > rect {
+
+svg.log-short .labels>rect {
 	fill: navy;
 }
+
 svg.log-short text {
 	font-family: myTime, monospace;
 	font-weight: bold;
