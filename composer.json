@@ -11,8 +11,8 @@
     "type": "library",
     "require": {
         "php": "^7.2",
-        "slothsoft/core": "^1.0",
-        "slothsoft/farah": "^1.0"
+        "slothsoft/core": "dev-develop",
+        "slothsoft/farah": "dev-develop"
     },
     "require-dev": {
         "phpunit/phpunit": "^6.5"

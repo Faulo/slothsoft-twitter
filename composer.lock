@@ -1,10 +1,10 @@
 {
     "_readme": [
         "This file locks the dependencies of your project to a known state",
-        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "86f2848b95e09af9c5b4fc6e065b9143",
+    "content-hash": "b9ea63d36f0d8d9a46dba5816a16b245",
     "packages": [
         {
             "name": "guzzlehttp/psr7",
@@ -70,6 +70,52 @@
                 "url"
             ],
             "time": "2017-03-20T17:10:46+00:00"
+        },
+        {
+            "name": "krakjoe/pthreads-polyfill",
+            "version": "v1.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/krakjoe/pthreads-polyfill.git",
+                "reference": "e0b6b34aca142dda943bf8ade046285fd2000c35"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/krakjoe/pthreads-polyfill/zipball/e0b6b34aca142dda943bf8ade046285fd2000c35",
+                "reference": "e0b6b34aca142dda943bf8ade046285fd2000c35",
+                "shasum": ""
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^5"
+            },
+            "type": "library",
+            "autoload": {
+                "files": [
+                    "src/Collectable.php",
+                    "src/Threaded.php",
+                    "src/Volatile.php",
+                    "src/Thread.php",
+                    "src/Worker.php",
+                    "src/Pool.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "PHP"
+            ],
+            "authors": [
+                {
+                    "name": "Joe Watkins",
+                    "email": "krakjoe@php.net"
+                }
+            ],
+            "description": "A polyfill for pthreads",
+            "homepage": "http://pthreads.org/",
+            "keywords": [
+                "polyfill",
+                "pthreads"
+            ],
+            "time": "2015-11-16T08:24:31+00:00"
         },
         {
             "name": "matthiasmullie/minify",
@@ -421,17 +467,17 @@
         },
         {
             "name": "slothsoft/blob",
-            "version": "9999999-dev",
+            "version": "dev-develop",
             "dist": {
                 "type": "path",
                 "url": "C:/Webserver/htdocs/workspace/slothsoft-blob",
-                "reference": "9182a9244f359248be62df458acd42bd5fb80774",
+                "reference": "b444a93c62482a426503abf2f84884d05ce79694",
                 "shasum": null
             },
             "require": {
                 "php": "^7.2",
-                "slothsoft/core": "dev-master",
-                "slothsoft/w3c": "dev-master"
+                "slothsoft/core": "dev-develop",
+                "slothsoft/w3c": "dev-develop"
             },
             "require-dev": {
                 "phpunit/phpunit": "^6.5"
@@ -470,18 +516,18 @@
         },
         {
             "name": "slothsoft/core",
-            "version": "9999999-dev",
+            "version": "dev-develop",
             "dist": {
                 "type": "path",
                 "url": "C:/Webserver/htdocs/workspace/slothsoft-core",
-                "reference": "ebdc59dfa0b0a1281d115aef81df1dd311ecc16e",
+                "reference": "fb866c9ce8634523fa10c48707db55bdc7f6c033",
                 "shasum": null
             },
             "require": {
-                "ext-curl": "*",
+                "guzzlehttp/psr7": "^1.4",
                 "php": "^7.2",
                 "psr/http-message": "^1.0",
-                "slothsoft/w3c": "dev-master"
+                "slothsoft/w3c": "dev-develop"
             },
             "require-dev": {
                 "phpunit/phpunit": "^6.5"
@@ -520,15 +566,16 @@
         },
         {
             "name": "slothsoft/farah",
-            "version": "9999999-dev",
+            "version": "dev-develop",
             "dist": {
                 "type": "path",
                 "url": "C:/Webserver/htdocs/workspace/slothsoft-farah",
-                "reference": "f15711532533d341f5b59f1bb4853b5700230f0c",
+                "reference": "3c29854e0388ef0c9027972ec0b085dc7e43af8c",
                 "shasum": null
             },
             "require": {
                 "guzzlehttp/psr7": "^1.4",
+                "krakjoe/pthreads-polyfill": "^1.1",
                 "matthiasmullie/minify": "^1.3",
                 "php": "^7.2",
                 "php-ds/php-ds": "^1.2",
@@ -536,15 +583,19 @@
                 "psr/container": "^1.0",
                 "psr/http-message": "^1.0",
                 "psr/log": "^1.0",
-                "slothsoft/blob": "dev-master",
-                "slothsoft/core": "dev-master"
+                "slothsoft/blob": "dev-develop",
+                "slothsoft/core": "dev-develop"
             },
             "require-dev": {
                 "phpunit/phpunit": "^6.5"
             },
             "suggest": {
-                "ext-ds": "*"
+                "ext-ds": "*",
+                "ext-pthreads": "*"
             },
+            "bin": [
+                "bin/farah-asset"
+            ],
             "type": "library",
             "autoload": {
                 "psr-0": {
@@ -581,11 +632,11 @@
         },
         {
             "name": "slothsoft/w3c",
-            "version": "9999999-dev",
+            "version": "dev-develop",
             "dist": {
                 "type": "path",
                 "url": "C:/Webserver/htdocs/workspace/slothsoft-w3c",
-                "reference": "3a122fea890ffaa9c74420a9edf15fe088cde17b",
+                "reference": "7e99fd45d055a22bfb7ca8953d0afe53263f2bf2",
                 "shasum": null
             },
             "require": {
@@ -983,16 +1034,16 @@
         },
         {
             "name": "phpspec/prophecy",
-            "version": "1.7.6",
+            "version": "1.8.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/phpspec/prophecy.git",
-                "reference": "33a7e3c4fda54e912ff6338c48823bd5c0f0b712"
+                "reference": "4ba436b55987b4bf311cb7c6ba82aa528aac0a06"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phpspec/prophecy/zipball/33a7e3c4fda54e912ff6338c48823bd5c0f0b712",
-                "reference": "33a7e3c4fda54e912ff6338c48823bd5c0f0b712",
+                "url": "https://api.github.com/repos/phpspec/prophecy/zipball/4ba436b55987b4bf311cb7c6ba82aa528aac0a06",
+                "reference": "4ba436b55987b4bf311cb7c6ba82aa528aac0a06",
                 "shasum": ""
             },
             "require": {
@@ -1004,12 +1055,12 @@
             },
             "require-dev": {
                 "phpspec/phpspec": "^2.5|^3.2",
-                "phpunit/phpunit": "^4.8.35 || ^5.7 || ^6.5"
+                "phpunit/phpunit": "^4.8.35 || ^5.7 || ^6.5 || ^7.1"
             },
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "1.7.x-dev"
+                    "dev-master": "1.8.x-dev"
                 }
             },
             "autoload": {
@@ -1042,7 +1093,7 @@
                 "spy",
                 "stub"
             ],
-            "time": "2018-04-18T13:57:24+00:00"
+            "time": "2018-08-05T17:53:17+00:00"
         },
         {
             "name": "phpunit/php-code-coverage",
@@ -1295,16 +1346,16 @@
         },
         {
             "name": "phpunit/phpunit",
-            "version": "6.5.8",
+            "version": "6.5.11",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/phpunit.git",
-                "reference": "4f21a3c6b97c42952fd5c2837bb354ec0199b97b"
+                "reference": "7bab54cb366076023bbf457a2a0d513332cd40f2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/4f21a3c6b97c42952fd5c2837bb354ec0199b97b",
-                "reference": "4f21a3c6b97c42952fd5c2837bb354ec0199b97b",
+                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/7bab54cb366076023bbf457a2a0d513332cd40f2",
+                "reference": "7bab54cb366076023bbf457a2a0d513332cd40f2",
                 "shasum": ""
             },
             "require": {
@@ -1322,7 +1373,7 @@
                 "phpunit/php-file-iterator": "^1.4.3",
                 "phpunit/php-text-template": "^1.2.1",
                 "phpunit/php-timer": "^1.0.9",
-                "phpunit/phpunit-mock-objects": "^5.0.5",
+                "phpunit/phpunit-mock-objects": "^5.0.9",
                 "sebastian/comparator": "^2.1",
                 "sebastian/diff": "^2.0",
                 "sebastian/environment": "^3.1",
@@ -1375,20 +1426,20 @@
                 "testing",
                 "xunit"
             ],
-            "time": "2018-04-10T11:38:34+00:00"
+            "time": "2018-08-07T07:05:35+00:00"
         },
         {
             "name": "phpunit/phpunit-mock-objects",
-            "version": "5.0.7",
+            "version": "5.0.10",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/phpunit-mock-objects.git",
-                "reference": "3eaf040f20154d27d6da59ca2c6e28ac8fd56dce"
+                "reference": "cd1cf05c553ecfec36b170070573e540b67d3f1f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/phpunit-mock-objects/zipball/3eaf040f20154d27d6da59ca2c6e28ac8fd56dce",
-                "reference": "3eaf040f20154d27d6da59ca2c6e28ac8fd56dce",
+                "url": "https://api.github.com/repos/sebastianbergmann/phpunit-mock-objects/zipball/cd1cf05c553ecfec36b170070573e540b67d3f1f",
+                "reference": "cd1cf05c553ecfec36b170070573e540b67d3f1f",
                 "shasum": ""
             },
             "require": {
@@ -1401,7 +1452,7 @@
                 "phpunit/phpunit": "<6.0"
             },
             "require-dev": {
-                "phpunit/phpunit": "^6.5"
+                "phpunit/phpunit": "^6.5.11"
             },
             "suggest": {
                 "ext-soap": "*"
@@ -1434,7 +1485,7 @@
                 "mock",
                 "xunit"
             ],
-            "time": "2018-05-29T13:50:43+00:00"
+            "time": "2018-08-09T05:50:03+00:00"
         },
         {
             "name": "sebastian/code-unit-reverse-lookup",
