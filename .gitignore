@@ -10,3 +10,5 @@ unused/
 Thumbs.db
 .DS_Store
 *.tmp
+/package-lock.json
+/node_modules/
