@@ -12,3 +12,4 @@ Thumbs.db
 *.tmp
 /package-lock.json
 /node_modules/
+/composer.lock
