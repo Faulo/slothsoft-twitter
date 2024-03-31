@@ -1,16 +1,15 @@
+# == Windows ==
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# == Composer ==
 /composer.phar
 /vendor/
-/data/
-/cache/
-/log/
-tmp/
-temp/
-unused/
-*Kopie*
-Thumbs.db
-.DS_Store
-*.tmp
-/package-lock.json
-/node_modules/
-/composer.lock
-/docs/
+
+# == phpDocumentor ==
+/docs/tmp/
+
+# == PHPUnit ==
+/.phpunit.result.cache
