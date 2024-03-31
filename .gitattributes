@@ -2,6 +2,7 @@
 .settings export-ignore
 .buildpath export-ignore
 .project export-ignore
+.derived export-ignore
 
 # == Git ==
 .gitignore export-ignore
