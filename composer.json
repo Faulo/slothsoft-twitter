@@ -1,40 +1,39 @@
 {
-    "name": "slothsoft/twitter",
-    "description": "A Farah module that downloads twitter feeds of individual users.",
-    "license": "WTFPL",
-    "authors": [
-        {
-            "name": "Daniel Schulz",
-            "email": "info.slothsoft@gmail.com"
-        }
-    ],
-    "type": "library",
-    "require": {
-        "php": "^7.2",
-        "slothsoft/core": "^1.0",
-        "slothsoft/farah": "^1.0"
-    },
-    "require-dev": {
-        "phpunit/phpunit": "^6.5"
-    },
-    "autoload": {
-        "psr-0": {
-            "Slothsoft\\Twitter\\": "src/"
-        },
-        "files": [
-            "src/registerModule.php"
-        ]
-    },
-    "keywords": [
-        "slothsoft",
-        "farah-module",
-        "docs"
-    ],
-    "autoload-dev": {
-        "classmap": [
-            "tests/"
-        ]
-    },
-    "classmap-authoritative": false,
-    "homepage": "http://farah.slothsoft.net/modules/twitter"
+	"name" : "slothsoft/twitter",
+	"description" : "A Farah module that downloads twitter feeds of individual users.",
+	"license" : "WTFPL",
+	"authors" : [{
+			"name" : "Daniel Schulz",
+			"email" : "info.slothsoft@gmail.com"
+		}
+	],
+	"type" : "library",
+	"require" : {
+		"php" : "^7.2",
+		"slothsoft/core" : "^1.0",
+		"slothsoft/farah" : "^1.0"
+	},
+	"require-dev" : {
+		"phpunit/phpunit" : "^6.5"
+	},
+	"autoload" : {
+		"psr-0" : {
+			"Slothsoft\\Twitter\\" : "src/"
+		},
+		"files" : [
+			"src/registerModule.php"
+		]
+	},
+	"keywords" : [
+		"slothsoft",
+		"farah-module",
+		"docs"
+	],
+	"autoload-dev" : {
+		"classmap" : [
+			"tests/"
+		]
+	},
+	"classmap-authoritative" : false,
+	"homepage" : "http://farah.slothsoft.net/modules/twitter"
 }
