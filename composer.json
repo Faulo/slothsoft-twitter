@@ -1,7 +1,7 @@
 {
 	"name" : "slothsoft/twitter",
 	"description" : "A Farah module that downloads twitter feeds of individual users.",
-	"license" : "WTFPL",
+	"license" : "MIT",
 	"authors" : [{
 			"name" : "Daniel Schulz",
 			"email" : "info.slothsoft@gmail.com"
