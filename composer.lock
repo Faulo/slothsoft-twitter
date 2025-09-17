@@ -8,16 +8,16 @@
     "packages": [
         {
             "name": "guzzlehttp/psr7",
-            "version": "2.7.1",
+            "version": "2.8.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/guzzle/psr7.git",
-                "reference": "c2270caaabe631b3b44c85f99e5a04bbb8060d16"
+                "reference": "21dc724a0583619cd1652f673303492272778051"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/guzzle/psr7/zipball/c2270caaabe631b3b44c85f99e5a04bbb8060d16",
-                "reference": "c2270caaabe631b3b44c85f99e5a04bbb8060d16",
+                "url": "https://api.github.com/repos/guzzle/psr7/zipball/21dc724a0583619cd1652f673303492272778051",
+                "reference": "21dc724a0583619cd1652f673303492272778051",
                 "shasum": ""
             },
             "require": {
@@ -33,7 +33,7 @@
             "require-dev": {
                 "bamarni/composer-bin-plugin": "^1.8.2",
                 "http-interop/http-factory-tests": "0.9.0",
-                "phpunit/phpunit": "^8.5.39 || ^9.6.20"
+                "phpunit/phpunit": "^8.5.44 || ^9.6.25"
             },
             "suggest": {
                 "laminas/laminas-httphandlerrunner": "Emit PSR-7 responses"
@@ -104,7 +104,7 @@
             ],
             "support": {
                 "issues": "https://github.com/guzzle/psr7/issues",
-                "source": "https://github.com/guzzle/psr7/tree/2.7.1"
+                "source": "https://github.com/guzzle/psr7/tree/2.8.0"
             },
             "funding": [
                 {
@@ -120,7 +120,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2025-03-27T12:30:47+00:00"
+            "time": "2025-08-23T21:21:41+00:00"
         },
         {
             "name": "laminas/laminas-escaper",
@@ -1152,25 +1152,25 @@
         },
         {
             "name": "slothsoft/blob",
-            "version": "1.1.8",
+            "version": "1.1.10",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Faulo/slothsoft-blob.git",
-                "reference": "86b3d2b6ec608bd25d2dd0dc86d7a8ddfd8725fb"
+                "reference": "4396f9fc905448e795c03375e3c8773a6c285120"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Faulo/slothsoft-blob/zipball/86b3d2b6ec608bd25d2dd0dc86d7a8ddfd8725fb",
-                "reference": "86b3d2b6ec608bd25d2dd0dc86d7a8ddfd8725fb",
+                "url": "https://api.github.com/repos/Faulo/slothsoft-blob/zipball/4396f9fc905448e795c03375e3c8773a6c285120",
+                "reference": "4396f9fc905448e795c03375e3c8773a6c285120",
                 "shasum": ""
             },
             "require": {
                 "php": ">=7.4",
-                "slothsoft/core": "^1.0",
+                "slothsoft/core": "^1.13.1",
                 "slothsoft/w3c": "^1.0"
             },
             "require-dev": {
-                "phpunit/phpunit": "8.5.*"
+                "phpunit/phpunit": "~9.6.23"
             },
             "type": "library",
             "extra": {
@@ -1180,7 +1180,7 @@
             },
             "autoload": {
                 "files": [
-                    "scripts/bootstrap.php"
+                    "src/bootstrap.php"
                 ],
                 "psr-4": {
                     "Slothsoft\\Blob\\": "src"
@@ -1204,39 +1204,46 @@
             ],
             "support": {
                 "issues": "https://github.com/Faulo/slothsoft-blob/issues",
-                "source": "https://github.com/Faulo/slothsoft-blob/tree/1.1.8"
+                "source": "https://github.com/Faulo/slothsoft-blob/tree/1.1.10"
             },
-            "time": "2025-07-04T16:39:46+00:00"
+            "time": "2025-09-02T23:30:39+00:00"
         },
         {
             "name": "slothsoft/core",
-            "version": "1.13.1",
+            "version": "1.13.7",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Faulo/slothsoft-core.git",
-                "reference": "bbbe78f820942fa94a0b39df845af24cffc5aa5a"
+                "reference": "28e6bdb78d787f584f332dc0b3f97ef719c040b9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Faulo/slothsoft-core/zipball/bbbe78f820942fa94a0b39df845af24cffc5aa5a",
-                "reference": "bbbe78f820942fa94a0b39df845af24cffc5aa5a",
+                "url": "https://api.github.com/repos/Faulo/slothsoft-core/zipball/28e6bdb78d787f584f332dc0b3f97ef719c040b9",
+                "reference": "28e6bdb78d787f584f332dc0b3f97ef719c040b9",
                 "shasum": ""
             },
             "require": {
                 "ext-xsl": "*",
                 "guzzlehttp/psr7": "^2.7",
                 "php": ">=7.4",
-                "php-ds/php-ds": "^1.2",
+                "php-ds/php-ds": "^1.7",
                 "psr/http-message": "^1.0",
                 "slothsoft/w3c": "^1.1",
                 "symfony/process": "^5.4.45"
             },
             "require-dev": {
-                "phpunit/phpunit": "8.5.*"
+                "ext-curl": "*",
+                "ext-gd": "*",
+                "ext-imagick": "*",
+                "ext-mysqli": "*",
+                "phpunit/phpunit": "~9.6.23"
             },
             "suggest": {
-                "ext-com_dotnet": "*",
-                "ext-curl": "*"
+                "ext-com_dotnet": "Needed for when FileSystem processes files >2GB under Windows",
+                "ext-curl": "Needed for networking",
+                "ext-gd": "Needed for ImageHelper",
+                "ext-imagick": "Needed for ImageHelper",
+                "ext-mysqli": "Needed for databasing"
             },
             "bin": [
                 "scripts/server-clean"
@@ -1273,22 +1280,22 @@
             ],
             "support": {
                 "issues": "https://github.com/Faulo/slothsoft-core/issues",
-                "source": "https://github.com/Faulo/slothsoft-core/tree/1.13.1"
+                "source": "https://github.com/Faulo/slothsoft-core/tree/1.13.7"
             },
-            "time": "2025-07-04T16:40:10+00:00"
+            "time": "2025-09-17T16:36:04+00:00"
         },
         {
             "name": "slothsoft/farah",
-            "version": "1.14.4",
+            "version": "1.18.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Faulo/slothsoft-farah.git",
-                "reference": "cc4f5c017e5a3576e4e1dfa3564bf005d9fb81a5"
+                "reference": "c1ebba9f2c15228ac3991636abc02bbed807be6a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Faulo/slothsoft-farah/zipball/cc4f5c017e5a3576e4e1dfa3564bf005d9fb81a5",
-                "reference": "cc4f5c017e5a3576e4e1dfa3564bf005d9fb81a5",
+                "url": "https://api.github.com/repos/Faulo/slothsoft-farah/zipball/c1ebba9f2c15228ac3991636abc02bbed807be6a",
+                "reference": "c1ebba9f2c15228ac3991636abc02bbed807be6a",
                 "shasum": ""
             },
             "require": {
@@ -1297,16 +1304,16 @@
                 "laminas/laminas-router": "^3.5",
                 "matthiasmullie/minify": "^1.3",
                 "php": ">=7.4",
-                "php-ds/php-ds": "^1.2",
+                "php-ds/php-ds": "^1.7",
                 "psr/cache": "^1.0",
                 "psr/container": "^1.0",
                 "psr/http-message": "^1.0",
                 "psr/log": "^1.0",
                 "slothsoft/blob": "^1.0",
-                "slothsoft/core": "^1.11.16"
+                "slothsoft/core": "^1.13.7"
             },
             "require-dev": {
-                "phpunit/phpunit": "8.5.*"
+                "phpunit/phpunit": "~9.6.23"
             },
             "suggest": {
                 "ext-ds": "*",
@@ -1320,7 +1327,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-main": "1.14.x-dev"
+                    "dev-main": "1.18.x-dev"
                 }
             },
             "autoload": {
@@ -1350,29 +1357,29 @@
             ],
             "support": {
                 "issues": "https://github.com/Faulo/slothsoft-farah/issues",
-                "source": "https://github.com/Faulo/slothsoft-farah/tree/1.14.4"
+                "source": "https://github.com/Faulo/slothsoft-farah/tree/1.18.2"
             },
-            "time": "2025-07-04T20:10:37+00:00"
+            "time": "2025-09-17T17:32:33+00:00"
         },
         {
             "name": "slothsoft/w3c",
-            "version": "1.2.6",
+            "version": "1.2.7",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Faulo/slothsoft-w3c.git",
-                "reference": "0efd4b0aa9e91e245f1c2c464ff388b0d4fa7260"
+                "reference": "5859aa497195f2753f2cbbd24a65cb64ee367236"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Faulo/slothsoft-w3c/zipball/0efd4b0aa9e91e245f1c2c464ff388b0d4fa7260",
-                "reference": "0efd4b0aa9e91e245f1c2c464ff388b0d4fa7260",
+                "url": "https://api.github.com/repos/Faulo/slothsoft-w3c/zipball/5859aa497195f2753f2cbbd24a65cb64ee367236",
+                "reference": "5859aa497195f2753f2cbbd24a65cb64ee367236",
                 "shasum": ""
             },
             "require": {
                 "php": ">=7.4"
             },
             "require-dev": {
-                "phpunit/phpunit": "8.5.*"
+                "phpunit/phpunit": "~9.6.23"
             },
             "type": "library",
             "extra": {
@@ -1403,13 +1410,13 @@
             ],
             "support": {
                 "issues": "https://github.com/Faulo/slothsoft-w3c/issues",
-                "source": "https://github.com/Faulo/slothsoft-w3c/tree/1.2.6"
+                "source": "https://github.com/Faulo/slothsoft-w3c/tree/1.2.7"
             },
-            "time": "2025-07-04T16:42:27+00:00"
+            "time": "2025-09-02T20:53:38+00:00"
         },
         {
             "name": "symfony/polyfill-php80",
-            "version": "v1.32.0",
+            "version": "v1.33.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/polyfill-php80.git",
@@ -1469,7 +1476,7 @@
                 "shim"
             ],
             "support": {
-                "source": "https://github.com/symfony/polyfill-php80/tree/v1.32.0"
+                "source": "https://github.com/symfony/polyfill-php80/tree/v1.33.0"
             },
             "funding": [
                 {
@@ -1478,6 +1485,10 @@
                 },
                 {
                     "url": "https://github.com/fabpot",
+                    "type": "github"
+                },
+                {
+                    "url": "https://github.com/nicolas-grekas",
                     "type": "github"
                 },
                 {
@@ -1623,16 +1634,16 @@
         },
         {
             "name": "myclabs/deep-copy",
-            "version": "1.13.2",
+            "version": "1.13.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/myclabs/DeepCopy.git",
-                "reference": "d25e62e636b0a9b01e3bdebb7823b474876dd829"
+                "reference": "07d290f0c47959fd5eed98c95ee5602db07e0b6a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/myclabs/DeepCopy/zipball/d25e62e636b0a9b01e3bdebb7823b474876dd829",
-                "reference": "d25e62e636b0a9b01e3bdebb7823b474876dd829",
+                "url": "https://api.github.com/repos/myclabs/DeepCopy/zipball/07d290f0c47959fd5eed98c95ee5602db07e0b6a",
+                "reference": "07d290f0c47959fd5eed98c95ee5602db07e0b6a",
                 "shasum": ""
             },
             "require": {
@@ -1671,7 +1682,7 @@
             ],
             "support": {
                 "issues": "https://github.com/myclabs/DeepCopy/issues",
-                "source": "https://github.com/myclabs/DeepCopy/tree/1.13.2"
+                "source": "https://github.com/myclabs/DeepCopy/tree/1.13.4"
             },
             "funding": [
                 {
@@ -1679,7 +1690,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2025-07-04T14:07:32+00:00"
+            "time": "2025-08-01T08:46:24+00:00"
         },
         {
             "name": "phar-io/manifest",
@@ -2098,16 +2109,16 @@
         },
         {
             "name": "phpunit/phpunit",
-            "version": "8.5.42",
+            "version": "8.5.46",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/phpunit.git",
-                "reference": "3a68a70824da546d26ac08ca4fced67341f4158f"
+                "reference": "2da51ff4b15c95e8c060d7dd693fd5899f87a112"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/3a68a70824da546d26ac08ca4fced67341f4158f",
-                "reference": "3a68a70824da546d26ac08ca4fced67341f4158f",
+                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/2da51ff4b15c95e8c060d7dd693fd5899f87a112",
+                "reference": "2da51ff4b15c95e8c060d7dd693fd5899f87a112",
                 "shasum": ""
             },
             "require": {
@@ -2118,7 +2129,7 @@
                 "ext-mbstring": "*",
                 "ext-xml": "*",
                 "ext-xmlwriter": "*",
-                "myclabs/deep-copy": "^1.13.1",
+                "myclabs/deep-copy": "^1.13.4",
                 "phar-io/manifest": "^2.0.4",
                 "phar-io/version": "^3.2.1",
                 "php": ">=7.2",
@@ -2126,11 +2137,11 @@
                 "phpunit/php-file-iterator": "^2.0.6",
                 "phpunit/php-text-template": "^1.2.1",
                 "phpunit/php-timer": "^2.1.4",
-                "sebastian/comparator": "^3.0.5",
+                "sebastian/comparator": "^3.0.6",
                 "sebastian/diff": "^3.0.6",
                 "sebastian/environment": "^4.2.5",
                 "sebastian/exporter": "^3.1.6",
-                "sebastian/global-state": "^3.0.5",
+                "sebastian/global-state": "^3.0.6",
                 "sebastian/object-enumerator": "^3.0.5",
                 "sebastian/resource-operations": "^2.0.3",
                 "sebastian/type": "^1.1.5",
@@ -2176,7 +2187,7 @@
             "support": {
                 "issues": "https://github.com/sebastianbergmann/phpunit/issues",
                 "security": "https://github.com/sebastianbergmann/phpunit/security/policy",
-                "source": "https://github.com/sebastianbergmann/phpunit/tree/8.5.42"
+                "source": "https://github.com/sebastianbergmann/phpunit/tree/8.5.46"
             },
             "funding": [
                 {
@@ -2200,7 +2211,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2025-05-02T06:33:00+00:00"
+            "time": "2025-09-14T06:16:44+00:00"
         },
         {
             "name": "sebastian/code-unit-reverse-lookup",
@@ -2259,16 +2270,16 @@
         },
         {
             "name": "sebastian/comparator",
-            "version": "3.0.5",
+            "version": "3.0.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/comparator.git",
-                "reference": "1dc7ceb4a24aede938c7af2a9ed1de09609ca770"
+                "reference": "4b3c947888c81708b20fb081bb653a2ba68f989a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/comparator/zipball/1dc7ceb4a24aede938c7af2a9ed1de09609ca770",
-                "reference": "1dc7ceb4a24aede938c7af2a9ed1de09609ca770",
+                "url": "https://api.github.com/repos/sebastianbergmann/comparator/zipball/4b3c947888c81708b20fb081bb653a2ba68f989a",
+                "reference": "4b3c947888c81708b20fb081bb653a2ba68f989a",
                 "shasum": ""
             },
             "require": {
@@ -2321,15 +2332,27 @@
             ],
             "support": {
                 "issues": "https://github.com/sebastianbergmann/comparator/issues",
-                "source": "https://github.com/sebastianbergmann/comparator/tree/3.0.5"
+                "source": "https://github.com/sebastianbergmann/comparator/tree/3.0.6"
             },
             "funding": [
                 {
                     "url": "https://github.com/sebastianbergmann",
                     "type": "github"
+                },
+                {
+                    "url": "https://liberapay.com/sebastianbergmann",
+                    "type": "liberapay"
+                },
+                {
+                    "url": "https://thanks.dev/u/gh/sebastianbergmann",
+                    "type": "thanks_dev"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/sebastian/comparator",
+                    "type": "tidelift"
                 }
             ],
-            "time": "2022-09-14T12:31:48+00:00"
+            "time": "2025-08-10T05:29:24+00:00"
         },
         {
             "name": "sebastian/diff",
@@ -2539,16 +2562,16 @@
         },
         {
             "name": "sebastian/global-state",
-            "version": "3.0.5",
+            "version": "3.0.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/global-state.git",
-                "reference": "91c7c47047a971f02de57ed6f040087ef110c5d9"
+                "reference": "800689427e3e8cf57a8fe38fcd1d4344c9b2f046"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/global-state/zipball/91c7c47047a971f02de57ed6f040087ef110c5d9",
-                "reference": "91c7c47047a971f02de57ed6f040087ef110c5d9",
+                "url": "https://api.github.com/repos/sebastianbergmann/global-state/zipball/800689427e3e8cf57a8fe38fcd1d4344c9b2f046",
+                "reference": "800689427e3e8cf57a8fe38fcd1d4344c9b2f046",
                 "shasum": ""
             },
             "require": {
@@ -2591,15 +2614,27 @@
             ],
             "support": {
                 "issues": "https://github.com/sebastianbergmann/global-state/issues",
-                "source": "https://github.com/sebastianbergmann/global-state/tree/3.0.5"
+                "source": "https://github.com/sebastianbergmann/global-state/tree/3.0.6"
             },
             "funding": [
                 {
                     "url": "https://github.com/sebastianbergmann",
                     "type": "github"
+                },
+                {
+                    "url": "https://liberapay.com/sebastianbergmann",
+                    "type": "liberapay"
+                },
+                {
+                    "url": "https://thanks.dev/u/gh/sebastianbergmann",
+                    "type": "thanks_dev"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/sebastian/global-state",
+                    "type": "tidelift"
                 }
             ],
-            "time": "2024-03-02T06:13:16+00:00"
+            "time": "2025-08-10T05:40:12+00:00"
         },
         {
             "name": "sebastian/object-enumerator",
@@ -2715,16 +2750,16 @@
         },
         {
             "name": "sebastian/recursion-context",
-            "version": "3.0.2",
+            "version": "3.0.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/recursion-context.git",
-                "reference": "9bfd3c6f1f08c026f542032dfb42813544f7d64c"
+                "reference": "8fe7e75986a9d24b4cceae847314035df7703a5a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/recursion-context/zipball/9bfd3c6f1f08c026f542032dfb42813544f7d64c",
-                "reference": "9bfd3c6f1f08c026f542032dfb42813544f7d64c",
+                "url": "https://api.github.com/repos/sebastianbergmann/recursion-context/zipball/8fe7e75986a9d24b4cceae847314035df7703a5a",
+                "reference": "8fe7e75986a9d24b4cceae847314035df7703a5a",
                 "shasum": ""
             },
             "require": {
@@ -2766,15 +2801,27 @@
             "homepage": "http://www.github.com/sebastianbergmann/recursion-context",
             "support": {
                 "issues": "https://github.com/sebastianbergmann/recursion-context/issues",
-                "source": "https://github.com/sebastianbergmann/recursion-context/tree/3.0.2"
+                "source": "https://github.com/sebastianbergmann/recursion-context/tree/3.0.3"
             },
             "funding": [
                 {
                     "url": "https://github.com/sebastianbergmann",
                     "type": "github"
+                },
+                {
+                    "url": "https://liberapay.com/sebastianbergmann",
+                    "type": "liberapay"
+                },
+                {
+                    "url": "https://thanks.dev/u/gh/sebastianbergmann",
+                    "type": "thanks_dev"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/sebastian/recursion-context",
+                    "type": "tidelift"
                 }
             ],
-            "time": "2024-03-01T14:07:30+00:00"
+            "time": "2025-08-10T05:25:53+00:00"
         },
         {
             "name": "sebastian/resource-operations",
